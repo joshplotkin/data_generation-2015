@@ -10,3 +10,4 @@
 * think about analysis that can be done --> add more columns
 * minor: add adds weeks to the start date so we don't get data for the final half week
 * script to calculate expected outputs based on profiles
+* improve shell scripts
