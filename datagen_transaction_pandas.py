@@ -39,7 +39,8 @@ def get_user_input():
         sys.exit(0)
 
     try:
-        customers = open(sys.argv[1], 'r').readlines()
+        open(sys.argv[1], 'r').readlines()
+        customers = sys.argv[1]
     except:
         error_msg(1)   
     try:
@@ -63,26 +64,15 @@ def create_header(line):
     headers[-1] = headers[-1].replace('\n','')
     headers.extend(['trans_num', 'trans_date', 'category', 'amt'])
     print ''.join([h + '|' for h in headers])[:-1]
-    return headers
-
 
 class Customer:
-    def __init__(self, customer, profile):
-        self.customer = customer
-        self.attrs = self.clean_line(self.customer)
+    def __init__(self, customer):
+        self.customer = '|'.join(list(customer))
+        self.print_trans(profile.sample_from())
     
     def print_trans(self, trans):
         for t in trans:
             print self.customer + '|' + t
-
-    def clean_line(self, line):
-        # separate into a list of attrs
-        cols = [c.replace('\n','') for c in line.split('|')]
-        # create a dict of name:value for each column
-        attrs = {}
-        for i in range(len(cols)):
-            attrs[headers[i].replace('\n','')] = cols[i].replace('\n','')
-        return attrs
 
 if __name__ == '__main__':
     # read user input into Inputs object
@@ -90,13 +80,14 @@ if __name__ == '__main__':
     customers, pro, curr_profile, start, end = get_user_input()
     profile = profile_weights.Profile(pro, start, end)
 
-    # takes the customers headers and appends
-    # transaction headers and returns/prints
-    headers = create_header(customers[0])
+    customers = read_csv(customers, delimiter = '|')
+    # limit customers only to the current profile
+    customers = customers[customers.profile == curr_profile]
+    # make all cols strings
+    for col in customers.columns:
+        customers.loc[:, col] = customers.loc[:, col].apply(lambda x: str(x))
+    # print headers
+    create_header('|'.join(list(customers.columns)))
 
-    # for each customer, if the customer fits this profile
-    # generate appropriate number of transactions
-    for line in customers[1:]:
-        cust = Customer(line, profile)
-        if cust.attrs['profile'] == curr_profile:
-            cust.print_trans(profile.sample_from())
+    # for each customer, generate appropriate number of transactions
+    [Customer(c) for c in customers.values]

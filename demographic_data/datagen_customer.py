@@ -23,7 +23,8 @@ class Headers:
 		headers = ''
 		for h in ['ssn', 'first', 'last', 'gender', 'street', \
 				  'city', 'state', 'zip', 'lat', 'long', 'city_pop', \
-				  'job', 'dob', 'acct_num', 'profile']:
+				  'job', 'dob_day', 'dob_month', 'dob_year', \
+				  'acct_num', 'profile']:
 			headers += h + '|'
 		self.headers = headers[:-1]
 
@@ -41,14 +42,14 @@ class Customer:
 		self.last = fake.last_name()
 		self.street = fake.street_address()
 		self.addy = self.get_random_location()
-		self.job = fake.job()
+		self.job = fake.job().replace(',','')
 
 		# skipping CC for now
 		# self.cc = fake.credit_card_full()
 		self.email = fake.email()
 		self.account = fake.random_number()
-		self.profile = self.find_profile()
 		self.print_customer()
+
 
 	def get_first_name(self):
 		if self.gender == 'M':
@@ -58,53 +59,26 @@ class Customer:
 
 
 	def generate_age_gender(self):
-		g_a = age_gender[min([a for a in age_gender if a > np.random.random()])]
+	    g_a = age_gender[min(age_gender, key=lambda x:abs(x-random.random()))]
 
-		while True:
-			dob = fake.date_time_this_century()
+	    while True:
+	        dob = fake.date_time_this_century()
 
-			# adjust the randomized date to yield the correct age 
-			start_age = (date.today() - date(dob.year, dob.month, dob.day)).days/365.
-			dob_year = dob.year - int(g_a[1] - int(start_age)) 
+	        # adjust the randomized date to yield the correct age 
+	        start_age = (date.today() - date(dob.year, dob.month, dob.day)).days/365.
+	        dob_year = dob.year - int(g_a[1] - int(start_age)) 
 
-			# since the year is adjusted, sometimes Feb 29th won't be a day
-			# in the adjusted year
-			try:
-				# return first letter of gender and dob
-			    return g_a[0][0], date(dob_year, dob.month, dob.day)
-			except:
-			    pass
+	        # since the year is adjusted, sometimes Feb 29th won't be a day
+	        # in the adjusted year
+	        try:
+	        	# return first letter of gender and dob
+	            return g_a[0][0], date(dob_year, dob.month, dob.day)
+	        except:
+	            pass
 
 	# find nearest city
 	def get_random_location(self):
 	    return cities[min(cities, key=lambda x:abs(x-random.random()))]
-
-	def find_profile(self):
-		age = (date.today() - self.dob).days/365.25
-		city_pop = float(self.addy.split('|')[-1])
-
-		match = []
-		for pro in all_profiles:
-			# -1 represents infinity
-		    if self.gender in all_profiles[pro]['gender'] and \
-		        age >= all_profiles[pro]['age'][0] and \
-		        ( age < all_profiles[pro]['age'][1] or \
-		        all_profiles[pro]['age'][1] == -1) and \
-		        city_pop >= all_profiles[pro]['city_pop'][0] and \
-		        (city_pop < all_profiles[pro]['city_pop'][1] or \
-		        	all_profiles[pro]['city_pop'][1] == -1):
-		            match.append(pro)
-		if match == []:
-		    match.append('leftovers.json')
-
-		# found overlap -- write to log file but continue
-		if len(match) > 1:
-		    f = open('profile_overlap_warnings.log', 'a')
-		    output = ' '.join(match) + ': ' + self.gender + ' ' +\
-		    		 str(age) + ' ' + str(city_pop) + '\n'
-		    f.write(output)
-		    f.close()	
-		return match[0]	
 
 	def print_customer(self):
 	     print str(self.ssn) + '|' +\
@@ -114,9 +88,12 @@ class Customer:
 	     self.street + '|' +\
 	     self.addy + '|' +\
 	     self.job + '|' +\
-	     str(self.dob) + '|' +\
-	     str(self.account)	+ '|' +\
-	     self.profile	
+	     str(self.dob.day) + '|' +\
+	     str(self.dob.month) + '|' +\
+	     str(self.dob.year) + '|' +\
+	     str(self.account)		
+
+
 
 def validate():
 	def print_err(n):
@@ -167,8 +144,10 @@ if __name__ == '__main__':
 	# turn all profiles into dicts to work with
 	all_profiles = MainConfig(main).config
 
-	for _ in range(num_cust):
-		Customer()
+	print all_profiles
+
+	# for _ in range(num_cust):
+	# 	Customer()
 
 
 
