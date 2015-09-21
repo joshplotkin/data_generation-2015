@@ -1,11 +1,5 @@
-* required directories:
- * profiles (with main_config.json and other profile json files)
- * demographic_data with age_gender_demographics.csv and locations_partitions.csv
- * pickles directory
+Usage:
+* modify main_config.json and json profiles to your liking
 * run 'python create_pickles.py'
-
-TODO:
-* create_pickles doesn't run if the number of years doesn't match the profile inputs
-* work on making datasets repeatable via random seed
-* script to replace hashbang with `which python`
-* script to replace hard links
+* to test usage, run 'python EXECUTE.py' for to generate 1 customer's transactions
+* to create a dataset trans_fact.csv, run 'sh GENERATE_DATASET.sh N' where N is the desired number of customers
