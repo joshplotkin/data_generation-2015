@@ -1,3 +1,5 @@
+Prerequisite: HAWQ with PL/Python installed with numpy and fake-factory (tarball included) packages installed for the python installation associated with PL/Python
+
 ## Usage:
 * Locally
  * (optional) modify main_config.json and json profiles to your liking

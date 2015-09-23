@@ -1,5 +1,6 @@
-<<<<<<< HEAD
 ## Data generation using pure python, HAWQ (with PL/Python), or MapReduce (streaming via python)
+
+### Instructions are included for each of the 3. MapReduce version is in the early stages and it's not currently recommended.
 
 TODO:
 * location of locations_partitions.csv is hardcoded (fixed?)
