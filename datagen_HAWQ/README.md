@@ -3,7 +3,7 @@ Prerequisite: HAWQ with PL/Python installed with numpy and fake-factory (tarball
 ## Usage:
 * Locally
  * (optional) modify main_config.json and json profiles to your liking
- * run 'python create_pickles.py'
+ * run 'python create_pickles.py <transaction start date MM-DD-YYYY> <end date>' (number of years be consistent with number of years in the profiles, which is 3 by default)
 
 * On data nodes
  * copy datagen_HAWQ/ to the same directory location on each data node
