@@ -1,3 +1,6 @@
+import sys
+sys.path.append('./src')
+
 from main_config import MainConfig
 import demographics
 import profile_weights_pickle
@@ -5,9 +8,9 @@ import customer_pickle
 from customer_pickle import *
 from create_pickles import *
 import subprocess
-import sys
 import datetime
 from datetime import date
+
 
 def validate():
 	def convert_date(d):
