@@ -7,6 +7,8 @@ from datetime import timedelta
 import random
 import numpy as np
 import math
+from scipy.stats import rv_discrete
+
 
 class Profile:
     def __init__(self, pro, start, end):
@@ -160,7 +162,9 @@ class Profile:
         self.date_weights()
 
     def closest_rand(self, pro, num):
-        return pro[min([k for k in pro.keys() if k > num])]
+        k = np.array(pro.keys(), dtype=float)
+        # smallest positive number
+        return pro[k[(k[np.where( k > num )]).argmin()]]
 
     def sample_amt(self, category):
         shape = self.profile['categories_amt'][category]['mean']**2/ \

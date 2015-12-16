@@ -2,10 +2,11 @@ import faker
 from faker import Faker
 import cPickle as pickle
 import numpy as np
+from scipy.stats import rv_discrete
 import datetime
 from datetime import date
 import os
-
+import sys
 
 class Customer:
 	'generates a customer and corresponding transactions based on\
@@ -58,9 +59,9 @@ class Customer:
 			return self.fake.first_name_female()
 
 	def generate_age_gender(self):
-		r = np.random.uniform(0,1)
-		g_a = self.age_gender[min([a for a in self.age_gender \
-				if a > r])]
+		key = self.age_gender.keys()
+		val = self.age_gender.values()
+		g_a = key[rv_discrete(values=(range(len(key)), val)).rvs()]
 
 		while True:
 			dob = self.fake.date_time_this_century()
@@ -79,8 +80,9 @@ class Customer:
 
 	# find nearest city
 	def get_random_location(self):
-		r = np.random.uniform(0,1)
-		return self.cities[min([c for c in self.cities if c > r])]
+		key = self.cities.keys()
+		val = self.cities.values()
+		return key[rv_discrete(values=(range(len(key)), val)).rvs()]
 
 	def find_profile(self):
 		age = (date.today() - self.dob).days/365.25
