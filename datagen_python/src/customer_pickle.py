@@ -61,8 +61,6 @@ class Customer:
 	def generate_age_gender(self):
 		key = self.age_gender.keys()
 		val = self.age_gender.values()
-		print val
-		sys.exit()
 		g_a = key[rv_discrete(values=(range(len(key)), val)).rvs()]
 
 		while True:
