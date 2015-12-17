@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/__init__.py
+END
+documentor.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/documentor.py
+END
+__main__.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/__main__.py
+END
+config.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/config.py
+END
+generator.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/generator.py
+END
+build_docs.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/build_docs.py
+END
+cli.py
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/cli.py
+END
+factory.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/factory.py
+END

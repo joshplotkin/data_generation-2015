@@ -34,7 +34,7 @@ state text,
 zip text,
 lat float8,
 long float8,
-cizty_pop integer,
+city_pop integer,
 job text,
 dob date,
 acct_num bigint,
@@ -57,9 +57,9 @@ $$
 	import sys
 	import os
 
-	sys.path.append('/data1/datagen_HAWQ/src')
-	sys.path.append('/data1/datagen_HAWQ/')
-	os.chdir('/data1/datagen_HAWQ/')
+	sys.path.append('/demo/103_datagen_HAWQ/datagen_HAWQ/src')
+	sys.path.append('/demo/103_datagen_HAWQ/datagen_HAWQ')
+	os.chdir('/demo/103_datagen_HAWQ/datagen_HAWQ')
 
 	# not currently working: repeatable data set
 	# if repeat.lower() != 'False':

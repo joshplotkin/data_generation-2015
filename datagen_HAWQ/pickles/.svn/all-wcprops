@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles
+END
+all_60_up.profile
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/all_60_up.profile
+END
+generate_customer.pickle
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/pickles/generate_customer.pickle
+END
+all_profiles.pickle
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/all_profiles.pickle
+END
+test.pickle
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/pickles/test.pickle
+END
+cities.pickle
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/cities.pickle
+END
+age_gender.pickle
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/age_gender.pickle
+END
+millenials.profile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/millenials.profile
+END
+male_30_40_smaller_cities.profile
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/male_30_40_smaller_cities.profile
+END
+male_30_40_bigger_cities.profile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/male_30_40_bigger_cities.profile
+END
+40_60_smaller_cities.profile
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/40_60_smaller_cities.profile
+END
+40_60_bigger_cities.profile
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/40_60_bigger_cities.profile
+END
+leftovers.profile
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/leftovers.profile
+END
+young_adults.profile
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/young_adults.profile
+END
+female_30_40_smaller_cities.profile
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/female_30_40_smaller_cities.profile
+END
+female_30_40_bigger_cities.profile
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/pickles/female_30_40_bigger_cities.profile
+END

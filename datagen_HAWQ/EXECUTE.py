@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/local/hawq/ext/python/bin/python
 
 import sys
 import os
@@ -10,3 +10,4 @@ f = open('./pickles/generate_customer.pickle', 'rb')
 customer = pickle.load(f)
 alltrans = customer().generate_transactions()
 print '\n'.join(['|'.join(a) for a in alltrans])
+# print customer().generate_transactions()

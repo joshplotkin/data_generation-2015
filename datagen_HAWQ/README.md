@@ -1,20 +1,6 @@
-Prerequisite: HAWQ with PL/Python installed with numpy and fake-factory (tarball included) packages installed for the python installation associated with PL/Python
-
-## Usage:
-* Locally
- * (optional) modify main_config.json and json profiles to your liking
- * run 'python create_pickles.py <transaction start date MM-DD-YYYY> <end date>' (number of years be consistent with number of years in the profiles, which is 3 by default)
-
-* On data nodes
- * copy datagen_HAWQ/ to the same directory location on each data node
- * ensure the following python packages are installed for the python installation indicated in greenplum_path: fake-factory (tarball included) and numpy
- * to test that the python is working, run 'python EXECUTE.py' which should output transactions for one customer 
-
-* On HAWQ master
- * copy hawq.sql anywhere on the HAWQ master
- * currently lines 60-62 of hawq.sql have the location of datagen_HAWQ/ hard-coded. ensure that matches the directory location on your data nodes
- * run psql -f hawq.sql -v customers=N (where N is the desired number of customers -- roughly 2,000,000 per 1 TB under default configuration)
-
-### TODO:
-* provide script to install packages
-* provide script to modify path on data nodes
+### Usage:
+* modify main_config.json and json profiles to your liking
+* run 'python create_pickles.py <transaction start date MM-DD-YYYY> <end date>' (number of years be consistent with number of years in the profiles, which is 3 by default)
+* install fake-factory (tarball included) and numpy. you can use `pip install <package>` or unzip the package tarballs and run `python setup.py build; python setup.py install` in the package directory.
+* to test usage, run 'python EXECUTE.py' for to generate 1 customer's transactions
+* to create a dataset trans_fact.csv, run 'sh GENERATE_DATASET.sh N' where N is the desired number of customers

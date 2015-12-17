@@ -1,0 +1,116 @@
+10
+
+dir
+26
+https://github.com/joshplotkin/data_generation/trunk/datagen_python/fake-factory-0.5.1/build/lib/faker/providers
+https://github.com/joshplotkin/data_generation
+
+
+
+2015-12-16T17:20:10.000000Z
+26
+joshplotkin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+281a4cc9-6d59-883a-594c-ce57b7db7bff
+
+file
+dir
+
+phone_number
+dir
+
+python
+dir
+
+address
+dir
+
+__init__.py
+file
+
+
+
+
+2015-11-26T05:00:28.808860Z
+7666dcccd2b4ee9bc013fff9cba073ba
+2015-12-16T17:20:10.000000Z
+26
+joshplotkin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5524
+
+internet
+dir
+
+currency
+dir
+
+misc
+dir
+
+date_time
+dir
+
+user_agent
+dir
+
+barcode
+dir
+
+profile
+dir
+
+credit_card
+dir
+
+ssn
+dir
+
+person
+dir
+
+company
+dir
+
+job
+dir
+
+lorem
+dir
+
+color
+dir
+

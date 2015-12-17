@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles
+END
+40_60_bigger_cities.json
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/40_60_bigger_cities.json
+END
+40_60_smaller_cities.json
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/40_60_smaller_cities.json
+END
+leftovers.json
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/leftovers.json
+END
+main_config.json
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/main_config.json
+END
+millenials.json
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/millenials.json
+END
+template.json
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/template.json
+END
+female_30_40_bigger_cities.json
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/female_30_40_bigger_cities.json
+END
+female_30_40_smaller_cities.json
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/female_30_40_smaller_cities.json
+END
+young_adults.json
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/young_adults.json
+END
+all_60_up.json
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/all_60_up.json
+END
+male_30_40_bigger_cities.json
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/male_30_40_bigger_cities.json
+END
+male_30_40_smaller_cities.json
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/profiles/male_30_40_smaller_cities.json
+END

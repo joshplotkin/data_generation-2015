@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils
+END
+datasets.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/datasets.py
+END
+datetime_safe.py
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/datetime_safe.py
+END
+loading.py
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/loading.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/__init__.py
+END
+distribution.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/distribution.py
+END
+text.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/text.py
+END
+decorators.py
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/joshplotkin/data_generation/!svn/ver/26/trunk/datagen_python/fake-factory-0.5.1/faker/utils/decorators.py
+END

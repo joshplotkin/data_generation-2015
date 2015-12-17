@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/joshplotkin/data_generation/!svn/ver/25/trunk/datagen_python/demographic_data
+END
+age_gender_demographics.csv
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/joshplotkin/data_generation/!svn/ver/25/trunk/datagen_python/demographic_data/age_gender_demographics.csv
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/joshplotkin/data_generation/!svn/ver/11/trunk/datagen_python/demographic_data/.DS_Store
+END
+locations_partitions.csv
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/joshplotkin/data_generation/!svn/ver/25/trunk/datagen_python/demographic_data/locations_partitions.csv
+END
